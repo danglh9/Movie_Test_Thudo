@@ -1,4 +1,4 @@
-package com.dang.movie_test_thudo;
+package com.dang.movie_test_thudo.presenter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,13 +9,12 @@ import android.widget.TextView;
 import androidx.leanback.widget.Presenter;
 
 import com.bumptech.glide.Glide;
+import com.dang.movie_test_thudo.R;
 import com.dang.movie_test_thudo.model.Movie;
 import com.dang.movie_test_thudo.utils.Utils;
 import com.google.common.collect.Lists;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 public class CardPresenterVertical extends Presenter {
 

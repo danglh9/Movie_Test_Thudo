@@ -1,4 +1,4 @@
-package com.dang.movie_test_thudo;
+package com.dang.movie_test_thudo.presenter;
 
 import androidx.leanback.widget.Presenter;
 import androidx.leanback.widget.PresenterSelector;

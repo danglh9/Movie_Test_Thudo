@@ -11,6 +11,7 @@ import androidx.leanback.widget.ListRow;
 import androidx.leanback.widget.ListRowPresenter;
 
 import com.dang.movie_test_thudo.model.Movie;
+import com.dang.movie_test_thudo.presenter.MoviePresenterSelector;
 
 public class MainFragment extends BrowseSupportFragment {
     private ArrayObjectAdapter rowsAdapter;

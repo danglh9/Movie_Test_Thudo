@@ -1,4 +1,4 @@
-package com.dang.movie_test_thudo;
+package com.dang.movie_test_thudo.presenter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +9,7 @@ import androidx.leanback.widget.Presenter;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
+import com.dang.movie_test_thudo.R;
 import com.dang.movie_test_thudo.utils.Utils;
 import com.google.common.collect.Lists;
 
