@@ -84,7 +84,11 @@
                 app:scrubber_disabled_size="0dp"
                 app:scrubber_dragged_size="0dp"
                 app:scrubber_enabled_size="0dp"
-                app:unplayed_color="#80FFFFFF" />
+                app:unplayed_color="#80FFFFFF"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:nextFocusDown="@id/exo_play_pause"
+                />
 
             <!-- Thời gian hiển thị giữa progress -->
             <TextView
@@ -114,28 +118,47 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
-                android:background="@drawable/lb_action_bg_focused"
                 android:padding="10dp"
                 android:text="Chọn tập/Video"
-                android:textColor="@android:color/white" />
+                android:background="@drawable/bg_focus_button"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:nextFocusRight="@id/exo_play_pause"
+                android:nextFocusUp="@id/exo_progress"
+                android:textColor="@android:color/white"
+
+                />
 
             <ImageButton
-                android:id="@id/exo_play_pause"
-                android:background="@drawable/bg_red_circle_no_stroke"
+
+                android:id="@+id/exo_play_pause"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
                 android:layout_gravity="center"
+                android:background="@drawable/bg_focus_button"
+                android:padding="10dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:nextFocusLeft="@id/btn_choose_episode"
+                android:nextFocusRight="@id/btn_next"
+                android:nextFocusUp="@id/exo_progress"
                 />
 
             <TextView
+                android:background="@drawable/bg_focus_button"
                 android:id="@+id/btn_next"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:padding="10dp"
                 android:text="Video Tiếp theo"
-                android:textColor="@android:color/white" />
+
+                android:textColor="@android:color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:nextFocusLeft="@id/exo_play_pause"
+                android:nextFocusUp="@id/exo_progress"
+                />
         </FrameLayout>
     </LinearLayout>
 </FrameLayout>
