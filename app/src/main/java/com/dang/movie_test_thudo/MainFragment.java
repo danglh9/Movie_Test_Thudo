@@ -18,7 +18,7 @@ public class MainFragment extends BrowseSupportFragment {
     private boolean isLoading = false;
     private int currentPage = 0;
     private static final int PAGE_SIZE = 25;
-    private static final int MAX_CATEGORY = 200; // nếu bạn muốn giới hạn
+    private static final int MAX_CATEGORY = 200;
 
     private final String TAG = MainFragment.class.getName();
 
@@ -44,7 +44,7 @@ public class MainFragment extends BrowseSupportFragment {
         setOnItemViewClickedListener((itemViewHolder, item, rowViewHolder, row) -> {
             if (item instanceof Movie) {
                 Movie movie = (Movie) item;
-                String demoUrl = "https://vip.opstream17.com/20240224/1272_8231dfa9/3000k/hls/mixed.m3u8";
+                String demoUrl = "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8";
                 Intent intent = new Intent(getActivity(), PlayerActivity.class);
                 intent.putExtra("title", movie.getTitle());
                 intent.putExtra("url",demoUrl);
@@ -58,7 +58,7 @@ public class MainFragment extends BrowseSupportFragment {
     private void setupUI() {
         setTitle("Kho Phim");
         setHeadersState(HEADERS_ENABLED);
-        setHeadersTransitionOnBackEnabled(true); // Không cần chuyển animation
+        setHeadersTransitionOnBackEnabled(true);
         setBrandColor(Color.parseColor("#4d4d4d"));
         rowsAdapter = new ArrayObjectAdapter(new ListRowPresenter());
         setAdapter(rowsAdapter);
